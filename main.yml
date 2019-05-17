@@ -1,0 +1,9 @@
+---
+- hosts: some_host
+  vars_files: 
+    - ./roles/users/vars/vars.yml
+    - ./roles/users/vars/vault.yml
+  become: yes
+  roles:
+    - some_role
+
